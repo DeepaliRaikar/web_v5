@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "Roboto Regular";
+	src: url("../node_modules/roboto-font/fonts/Roboto/roboto-regular-webfont.ttf") format("truetype"),
+	url("../node_modules/roboto-font/fonts/Roboto/roboto-regular-webfont.woff") format("woff");
+}
+@font-face {
+	font-family: "Roboto Light";
+	src: url("../node_modules/roboto-font/fonts/Roboto/roboto-light-webfont.ttf") format("truetype"),
+	url("../node_modules/roboto-font/fonts/Roboto/roboto-light-webfont.woff") format("woff");
+}
+@font-face {
+	font-family: "Roboto Medium";
+	src: url("../node_modules/roboto-font/fonts/Roboto/roboto-medium-webfont.ttf") format("truetype"),
+	url("../node_modules/roboto-font/fonts/Roboto/roboto-medium-webfont.woff") format("woff");
+}
+.area-marquee-container *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family: "Roboto Regular";
+}
+.area-marquee-container{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+}
+.marquee-sibling {
+	padding: 0 15px 0 0;
+	width: auto;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	float: left;
+	left: 0;
+	background: #fff;
+	z-index: 2;
+	font-family: "Roboto Medium";
+
+}
+.marquee, *[class^="marquee"] {
+	display: inline-block;
+	white-space: nowrap;
+	position:absolute;
+}
+
+.marquee{
+  margin-left: 25%;
+}
+
+.marquee-content-items{
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  height: 45px;
+  position: relative;
+}
+
+.marquee-content-items li{
+  display: inline-block;
+  line-height: 38px;
+  font-weight: 400;
+	font-family: "Roboto Medium";
+}
+
+.marquee-content-items li:after{
+	content: "|";
+	margin: 0 1em;
+	color: #d7d7d7;
+}
+
+.area-marquee-content {
+	display: block;
+	padding: 1em;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-left: 0;
+}
+.area-marquee-content *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}

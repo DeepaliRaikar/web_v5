@@ -1,0 +1,54 @@
+#snackbar-container {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 99999999999999999999999;
+}
+.snackbar {
+  overflow: hidden;
+  clear: both;
+  min-width: 288px;
+  max-width: 568px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  transition: 0.5s ease-in;
+}
+.snackbar.snackbar-opened {
+  height: auto;
+  opacity: 1;
+  top: 0px;
+  transition: 0.5s ease-in;
+}
+.snackbar.toast{
+   -webkit-border-radius: 0; 
+  -moz-border-radius: 0; 
+  border-radius: 0;
+  text-align: center;
+}
+.snackbar.float-right{
+    float: right;
+}
+.snackbar.float-center{
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  #snackbar-container {
+    left: 0px !important;
+    right: 0px;
+    width: 100%;
+  }
+  #snackbar-container .snackbar {
+    min-width: 100%;
+  }
+  #snackbar-container [class="snackbar snackbar-opened"] ~ .snackbar.toast {
+    margin-top: 20px;
+  }
+  #snackbar-container [class="snackbar snackbar-opened"] {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=snackbar.css.map */
