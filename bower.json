@@ -1,0 +1,17 @@
+{
+  "name": "web_v5",
+  "description": "new version of website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "roboto-webfont-bower": "roboto-webfont#^0.1.1"
+  }
+}
